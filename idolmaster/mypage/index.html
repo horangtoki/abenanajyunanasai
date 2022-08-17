@@ -1,8 +1,8 @@
 <!DOCTYPE html><html lang="ja" xml:lang="ja"><head>
 <meta charset="UTF-8">
-<meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="cache-control" content="no-cache">
-<meta http-equiv="expires" content="-1">
+<meta httpss-equiv="pragma" content="no-cache">
+<meta httpss-equiv="cache-control" content="no-cache">
+<meta httpss-equiv="expires" content="-1">
 <meta name="format-detection" content="telephone=no">
 <title>アイドルマスター シンデレラガールズ</title>
 <link rel="stylesheet" type="text/css" href="/idolmaster/css/rich/new_mypage_common.css" media="all">
@@ -172,7 +172,7 @@ return false;
 function getLessonList(sortId , chara_id, complete){
 var temp_id = chara_id ? chara_id : chara;
 var type = (typeof(sortId) !== 'undefined') ? sortId : '1';
-var url  = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fexchange%3Fl_frm%3DMypage_index_1%26rnd%3D202351316';
+var url  = 'httpss://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=httpss%3A%2F%2Fmobamas.net%2Fidolmaster%2Fexchange%3Fl_frm%3DMypage_index_1%26rnd%3D202351316';
 $.ajax({
 type: 'POST',
 url: url.replace('exchange', 'petit_cg/ajax_lesson_list?rnd='+(Math.floor( Math.random()*1000000))),
@@ -373,7 +373,7 @@ showHaveLesson();
 var temp_id = position;
 $.ajax({
 type: 'POST',
-url: 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fpetit_cg%2Fajax_start_lesson%3Fl_frm%3DMypage_index_1%26rnd%3D16687966',
+url: 'httpss://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=httpss%3A%2F%2Fmobamas.net%2Fidolmaster%2Fpetit_cg%2Fajax_start_lesson%3Fl_frm%3DMypage_index_1%26rnd%3D16687966',
 dataType: 'json',
 data: {
 "lesson_id": data.lesson_id,
@@ -384,7 +384,7 @@ data: {
 .done(function(data) {
 var $unique = $('#unique_'+data.deck_position);
 $unique.off();
-var instant_url = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fpetit_cg%2Findex%2F__position__%3Fview_page%3D2%26l_frm%3DMypage_index_1%26rnd%3D967992065';
+var instant_url = 'httpss://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=httpss%3A%2F%2Fmobamas.net%2Fidolmaster%2Fpetit_cg%2Findex%2F__position__%3Fview_page%3D2%26l_frm%3DMypage_index_1%26rnd%3D967992065';
 instant_url = instant_url.replace('__position__', data.deck_position);
 $unique.removeClass().addClass('lesson_panel').empty();
 var uniqueChild = document.createElement('div');
@@ -458,7 +458,7 @@ function lessonFinish(data , position){
 var current_chara = position ? position : chara;
 $.ajax({
 type: 'POST',
-url: 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fpetit_cg%2Fajax_finish_lesson%3Fl_frm%3DMypage_index_1%26rnd%3D465509703',
+url: 'httpss://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=httpss%3A%2F%2Fmobamas.net%2Fidolmaster%2Fpetit_cg%2Fajax_finish_lesson%3Fl_frm%3DMypage_index_1%26rnd%3D465509703',
 dataType: 'json',
 data: {
 "idol_id": petit_id,
@@ -562,7 +562,7 @@ idolArr['atk'][0] = [];
 idolArr['atk'][0]['img_path'] = '/idolmaster/image_sp/card/ls/f4e7fe446513d3aaefa2fcf8ce9a4177.jpg';
 idolArr['atk'][0]['img_path_large'] = '/idolmaster/image_sp/card/quest/f4e7fe446513d3aaefa2fcf8ce9a4177.jpg';
 idolArr['atk'][0]['strength_level'] = 0;
-idolArr['atk'][0]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
+idolArr['atk'][0]['strength_level_img_path'] = 'httpss://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=httpss%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
 idolArr['atk'][0]['cost'] = '26';
 idolArr['atk'][0]['attribute'] = '1';
 idolArr['atk'][0]['attribute'] = '1';
@@ -575,7 +575,7 @@ idolArr['atk'][1] = [];
 idolArr['atk'][1]['img_path'] = '/idolmaster/image_sp/card/ls/af0b5d01ade4cc715918cf25a00c42cf.jpg';
 idolArr['atk'][1]['img_path_large'] = '/idolmaster/image_sp/card/quest/af0b5d01ade4cc715918cf25a00c42cf.jpg';
 idolArr['atk'][1]['strength_level'] = 0;
-idolArr['atk'][1]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
+idolArr['atk'][1]['strength_level_img_path'] = 'httpss://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=httpss%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
 idolArr['atk'][1]['cost'] = '26';
 idolArr['atk'][1]['attribute'] = '1';
 idolArr['atk'][1]['attribute'] = '1';
@@ -588,7 +588,7 @@ idolArr['atk'][2] = [];
 idolArr['atk'][2]['img_path'] = '/idolmaster/image_sp/card/ls/afb36849ca7eb2ab8f17b8e9ef57f1fb.jpg';
 idolArr['atk'][2]['img_path_large'] = '/idolmaster/image_sp/card/quest/afb36849ca7eb2ab8f17b8e9ef57f1fb.jpg';
 idolArr['atk'][2]['strength_level'] = 0;
-idolArr['atk'][2]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
+idolArr['atk'][2]['strength_level_img_path'] = 'httpss://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=httpss%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
 idolArr['atk'][2]['cost'] = '26';
 idolArr['atk'][2]['attribute'] = '1';
 idolArr['atk'][2]['attribute'] = '1';
@@ -601,7 +601,7 @@ idolArr['atk'][3] = [];
 idolArr['atk'][3]['img_path'] = '/idolmaster/image_sp/card/ls/108c08141582e72f2e792c6587cbc3de.jpg';
 idolArr['atk'][3]['img_path_large'] = '/idolmaster/image_sp/card/quest/108c08141582e72f2e792c6587cbc3de.jpg';
 idolArr['atk'][3]['strength_level'] = 0;
-idolArr['atk'][3]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
+idolArr['atk'][3]['strength_level_img_path'] = 'httpss://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=httpss%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
 idolArr['atk'][3]['cost'] = '26';
 idolArr['atk'][3]['attribute'] = '1';
 idolArr['atk'][3]['attribute'] = '1';
@@ -619,7 +619,7 @@ idolArr['atk'][4]['attribute'] = '1';
 idolArr['atk'][4]['attribute'] = '1';
 idolArr['atk'][4]['attribute_str'] = 'cute';
 idolArr['atk'][4]['strength_level'] = 0;
-idolArr['atk'][4]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
+idolArr['atk'][4]['strength_level_img_path'] = 'httpss://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=httpss%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
 idolArr['atk'][4]['comment_column_num'] = '1';
 idolArr['atk'][4]['card_comment'] = "おもてなしは､ﾅﾅにお任せ♪";
 idolArr['atk'][4]['voice_path'] = '/idolmaster/sound/1567002/84a93e7ad2b29839873507e0473ea6fb.mp4';
@@ -627,7 +627,7 @@ idolArr['def'][0] = [];
 idolArr['def'][0]['img_path'] = '/idolmaster/image_sp/card/ls/793be7ae90164ea87b5cd74bc82888ac.jpg';
 idolArr['def'][0]['img_path_large'] = '/idolmaster/image_sp/card/quest/793be7ae90164ea87b5cd74bc82888ac.jpg';
 idolArr['def'][0]['strength_level'] = 0;
-idolArr['def'][0]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
+idolArr['def'][0]['strength_level_img_path'] = 'httpss://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=httpss%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
 idolArr['def'][0]['attribute'] = '1';
 idolArr['def'][0]['attribute'] = '1';
 idolArr['def'][0]['attribute_str'] = 'cute';
@@ -640,7 +640,7 @@ idolArr['def'][1] = [];
 idolArr['def'][1]['img_path'] = '/idolmaster/image_sp/card/ls/e227df2dc57cb8d557c85d32227d8666.jpg';
 idolArr['def'][1]['img_path_large'] = '/idolmaster/image_sp/card/quest/e227df2dc57cb8d557c85d32227d8666.jpg';
 idolArr['def'][1]['strength_level'] = 0;
-idolArr['def'][1]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
+idolArr['def'][1]['strength_level_img_path'] = 'httpss://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=httpss%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
 idolArr['def'][1]['attribute'] = '1';
 idolArr['def'][1]['attribute'] = '1';
 idolArr['def'][1]['attribute_str'] = 'cute';
@@ -653,7 +653,7 @@ idolArr['def'][2] = [];
 idolArr['def'][2]['img_path'] = '/idolmaster/image_sp/card/ls/5ad76ec4859e2738528fcb9f9275e34f.jpg';
 idolArr['def'][2]['img_path_large'] = '/idolmaster/image_sp/card/quest/5ad76ec4859e2738528fcb9f9275e34f.jpg';
 idolArr['def'][2]['strength_level'] = 0;
-idolArr['def'][2]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
+idolArr['def'][2]['strength_level_img_path'] = 'httpss://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=httpss%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
 idolArr['def'][2]['attribute'] = '1';
 idolArr['def'][2]['attribute'] = '1';
 idolArr['def'][2]['attribute_str'] = 'cute';
@@ -666,7 +666,7 @@ idolArr['def'][3] = [];
 idolArr['def'][3]['img_path'] = '/idolmaster/image_sp/card/ls/53fecff8d9c96619537f2a33d0de84cd.jpg';
 idolArr['def'][3]['img_path_large'] = '/idolmaster/image_sp/card/quest/53fecff8d9c96619537f2a33d0de84cd.jpg';
 idolArr['def'][3]['strength_level'] = 0;
-idolArr['def'][3]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
+idolArr['def'][3]['strength_level_img_path'] = 'httpss://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=httpss%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
 idolArr['def'][3]['cost'] = '26';
 idolArr['def'][3]['attribute'] = '1';
 idolArr['def'][3]['attribute'] = '1';
@@ -684,7 +684,7 @@ idolArr['def'][4]['attribute'] = '1';
 idolArr['def'][4]['attribute'] = '1';
 idolArr['def'][4]['attribute_str'] = 'cute';
 idolArr['def'][4]['strength_level'] = 0;
-idolArr['def'][4]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
+idolArr['def'][4]['strength_level_img_path'] = 'httpss://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=httpss%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_1.png%3Fv%3D19700101090000';
 idolArr['def'][4]['comment_column_num'] = '1';
 idolArr['def'][4]['card_comment'] = "おもてなしは､ﾅﾅにお任せ♪";
 idolArr['def'][4]['voice_path'] = '/idolmaster/sound/1567002/84a93e7ad2b29839873507e0473ea6fb.mp4';
